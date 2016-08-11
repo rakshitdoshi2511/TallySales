@@ -1,28 +1,146 @@
 <div class="homeHeroChart">
-    <div class="header homeHeroChartHeader">
-        <div>
-            <h2 class="title">Quarterly Performance</h2>
-            <div class="refresh">
-                <span class="timestamp" dir="ltr">As of Today 08.19</span>
-                <button class="slds-button slds-button--icon-border uiButton forceIconDeprecated">
-                </button>
+    <div class="chartComponentWrapper">
+        <div class="colMain">
+            <div class="top">
+                <div class="flexipageComponent">
+                    <div class="header homeHeroChartHeader">
+                        <div>
+                            <h2 class="title">Quarterly Performance</h2>
+                            <div class="refresh">
+                                <span class="timestamp" dir="ltr">As of Today 08.19</span>
+                                <button class="slds-button slds-button--icon-border uiButton forceIconDeprecated">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="metricRow">
+                            <li class="metric">
+                                <span class="metricLabel">Closed</span>
+                                <span class="metricAmount uiOutputText">€234,111</span>
+                            </li>
+                            <li class="metric">
+                                <span class="metricLabel">Open(>70%)</span>
+                                <span class="metricAmount uiOutputText">€162,000</span>
+                            </li>
+                            <li class="metric">
+                                <span class="metricLabel">Goal</span>
+                                <span class="metricAmount uiOutputText" ng-model="goal">€100,000</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chartBody">
+                        <div class="chartWrapper">
+                            <div class="eclair-component-container reportsEclairChart">
+                                <div class="eclair-component-chart" style="width: 664.922px;">
+                                    <div style="position: relative;">
+                                        <div id="chart" style="z-index: 2; position: absolute; overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 664.922px; height: 325px; left: 0px; top: 0px;">
+                                            <chart width="665" height="325" margin="45" data="data"></chart>
+                                        </div>
+                                    </div>
+
+                                </div>    
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <!--<div class="flexipageComponent">
+                    <article class="homeNewsPanel">
+                        <div class="witsNewsPanel">
+                            <div class="wideRegion newscontainer">
+                                <article class="teaserCardDesktop forceBaseCard witsNewsTeaserCard">
+                                     <div class="card-header">
+                                         <h2 class="card-header-title">
+                                             <div class="panel-header">
+                                                <div class="header-label">Account Insights</div>
+                                             </div>
+                                         </h2>
+                                     </div>
+                                     <div class="card-body">
+
+                                     </div>
+                                     <div class="card-footer">
+                                     </div>
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+                </div>-->
+            </div>
+            <div class="bottomWrapper">
+                <div class="bottomLeft">
+                    <div class="flexipageComponent">
+                        <div class="homeEventCard">
+                            <div class="header">
+                                <h2 class="heading">Upcoming Events
+                                </h2>
+                            </div>
+                            <div class="uiAbstractList showEmptyContent">
+                                <div class="listContent">
+                                    <ul></ul>
+                                    <div class="emptyListContent">No events to show</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomRight">
+                    <div class="flexipageComponent">
+                        <div class="homeEventCard">
+                            <div class="header">
+                                <h2 class="heading">Today's Tasks
+                                </h2>
+                            </div>
+                            <div class="uiAbstractList showEmptyContent">
+                                <div class="listContent">
+                                    <ul></ul>
+                                    <div class="emptyListContent">No tasks due today</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <ul class="metricRow">
-            <li class="metric">
-                <span class="metricLabel">Closed</span>
-                <span class="metricAmount uiOutputText">€234,111</span>
-            </li>
-            <li class="metric">
-                <span class="metricLabel">Open(>70%)</span>
-                <span class="metricAmount uiOutputText">€162,000</span>
-            </li>
-            <li class="metric">
-                <span class="metricLabel">Goal</span>
-                <span class="metricAmount uiOutputText">€100,000</span>
-            </li>
-        </ul>
+        <div class="colSide">
+            <div class="flexipageComponent">
+                <div class="homeAssistant">
+                    <h2 class="assistantTitle">
+                        Assistant
+                    </h2>
+                    <div class="assistantCardList uiAbstractList">
+                        <div class="listContent">
+                            <ul class="assistantCardList" ng-repeat="assitantItem in assistantList">
+                                <li class="homeAssistantCard">
+                                    <article>
+                                        <h3 class="assistantHeader">
+                                            <span class="icon">
+                                                <div class="entityIcon forceEntityIcon" style="background-color: #FCB95B">
+                                                    <span class="uiImage">
+                                                        <img src="assets/img/icons/opportunity_120.png" class="icon">
+                                                    </span>
+                                                </div>
+                                            </span>
+                                            <span class="headerText">
+                                                This Opportunity Has Had No Activity for {{assitantItem.noofDays}} Days
+                                            </span>
+                                        </h3>
+                                        <div class="recordLayout">
+                                            <div class="template homeAssistantCardStencil forceRecordLayout">
+                                                <div class="primaryField">
+                                                    <div class="outputLookupContainer forceOutputLookupWithPreview">
+                                                        <a class="textUnderline outputLookupLink forceOutputLookup">{{assitantItem.opportunityName}}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <h1></h1>
-    <chart width="800" height="530" margin="45" data="data"></chart>
+    
 </div>

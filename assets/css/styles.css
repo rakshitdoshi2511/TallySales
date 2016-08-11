@@ -42,7 +42,7 @@ img.icon{
     margin-top: 0px;
     float: left;
 }
-.icon{
+/*.icon{
     display: block;
     background-color: darkorange;
     border-radius: 10%;
@@ -51,7 +51,7 @@ img.icon{
     margin-left: 10px;
     margin-top: 10px;
     float: left;
-}
+}*/
 h3.head{
     font-family: sans-serif;
     font-size: 0.95rem;

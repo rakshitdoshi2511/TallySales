@@ -10,6 +10,7 @@
 .homeHeroChartHeader.header {
     border-bottom: 1px solid #e4dcdc;
     padding: .75rem;
+    margin-left: -15px;
 }
 .homeHeroChartHeader .refresh {
     display: inline;
@@ -140,57 +141,338 @@ span.metricAmount{
     color: rgb(22, 50, 92);
     font-family: sans-serif;
 }
+.homeDesktopTemplate .colMain {
+    width: 66.66%;
+    border-right: 1px solid rgb(216, 221, 230);
+    padding: 1rem;
+}
+.colMain {
+    width: 66.66%;
+    border-right: 1px solid rgb(216, 221, 230);
+    padding: 1rem;
+}
+.colSide{
+    width: 33.33%;
+    padding: 1rem;
+}
+.top {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.flexipageComponent:not(:first-child) {
+    margin-top: 1rem;
+}
+.chartBody {
+    height: 342px;
+    border-bottom: 1px solid #e4dcdc;
+}
+.chartWrapper {
+    position: relative;
+    left: -16px;
+    height: 325px;
+    top: 15px;
+}
+.reportsEclairChart.eclair-component-container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.reportsEclairChart .eclair-component-chart, .reportsEclairChart .eclair-component-legend {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    -webkit-transition: width .6s;
+    transition: width .6s;
+}
+.homeNewsPanel {
+    border-radius: .25rem;
+    border: 1px solid rgb(216, 221, 230);
+}
+.homeNewsPanel .newscontainer {
+    border-radius: 0;
+    border: 0;
+}
+.witsNewsPanel .newscontainer {
+    color: rgb(22, 50, 92);
+    background-color: rgb(244, 246, 249);
+    border-radius: .25rem;
+    overflow: hidden;
+    border: 1px solid rgb(216, 221, 230);
+}
+.forceBaseCard {
+    background-color: rgb(255, 255, 255);
+    border: rgb(216, 221, 230) 1px solid;
+    color: rgb(22, 50, 92);
+    margin: .75rem;
+    border-radius: .25rem;
+    over
+}
+.homeNewsPanel .witsNewsTeaserCard {
+    padding: 0 1rem;
+}
+.witsNewsTeaserCard {
+    color: rgb(22, 50, 92);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    border-radius: .25rem;
+    overflow: hidden;
+    border: 0;
+    padding: 0 .75rem;
+}
+.forceBaseCard .card-header {
+    border-bottom: rgb(216, 221, 230) 1px solid;
+    color: rgb(22, 50, 92);
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: .75rem
+}
+.forceBaseCard .card-header.has-icon {
+    line-height: 2rem
+}
+.forceBaseCard .header-icon {
+    float: left;
+    margin-right: .75rem
+}
+.forceBaseCard a .card-header:active {
+    background-color: rgb(238, 241, 246)
+}
+.forceBaseCard .card-header-title {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .8125rem
+}
+.forceBaseCard .card-header-right {
+    -webkit-flex: initial;
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial
+}
+.forceBaseCard .card-footer {
+    line-height: 1.5;
+    font-size: .8125rem;
+    font-weight: 400;
+    padding: .75rem 0 .5rem 1rem
+}
+.forceBaseCard .card-footer:empty {
+    display: none
+}
+.witsNewsTeaserCard .panel-header {
+    color: rgb(22, 50, 92);
+    font-size: .8125rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    font-family: sans-serif;
+}
+.bottomWrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.bottomLeft {
+    padding-right: 1rem;
+    width: 50%;
+}
+.bottomRight{
+    padding-right: 1rem;
+    width: 50%;
+}
+.homeEventCard {
+    border: 1px solid rgb(216, 221, 230);
+    border-radius: .25rem;
+    padding: 0 1rem;
+}
+.header {
+    clear: both;
+    width: 100%;
+    padding: 1.5rem 0 2rem 0;
+}
+h2.heading{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+}
+.uiAbstractList .listContent {
+    clear: both;
+    position: relative;
+}
+.uiAbstractList .emptyListContent {
+    display: none;
+    color: rgb(84, 105, 141);
+    font-size: .8125rem;
+    margin: 0 auto;
+    padding: .5rem 0 2rem 0;
+    text-align: center;
+}
+.uiAbstractList.showEmptyContent:not(.loading) .emptyListContent {
+    display: block
+}
+.uiAbstractList .loadingIndicator {
+    display: none;
+    height: 100%;
+    min-height: 2.5rem;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 80
+}
+.uiAbstractList.loading {
+    min-height: 2.5rem
+}
+.uiAbstractList.loading .loadingIndicator {
+    display: block
+}
+.uiAbstractList .loadingIndicator .background {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    opacity: .6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+    display: inline;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    zoom: 1;
+}
+.homeAssistant{
+    padding: .75rem;
+}
+h2.assistantTitle{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.chartComponentWrapper{
+    display: flex;
+}
+.assistantCardList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.homeAssistantCard {
+    border: 1px solid rgb(216, 221, 230);
+    border-radius: .25rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+h3.assistantHeader {
+    display: table;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: 1em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.homeAssistantCard .assistantHeader .icon, .homeAssistantCard .assistantHeader .headerText {
+    display: table-cell;
+}
+.homeAssistantCard .entityIcon {
+    float: left;
+    margin-right: .75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.forceEntityIcon {
+    display: block;
+    border-radius: .125rem;
+}
+.homeAssistantCard .entityIcon .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.homeAssistantCard .assistantHeader .headerText {
+    color: rgb(84, 105, 141);
+    font-size: .8125rem;
+    padding-top: .25rem;
+    vertical-align: top;
+    display: table-cell;
+}
+.homeAssistantCard .recordLayout {
+    padding: 1.5rem 0;
+    clear: both;
+}
+.forceStyle .forceRecordLayout {
+    font-size: .8125rem;
+}
+.homeAssistantCardStencil .primaryField {
+    font-size: .8125rem;
+    line-height: 1.5;
+}
+.forceOutputLookupWithPreview a.textUnderline {
+    border-bottom: 1px dotted transparent;
+    color: rgb(0, 112, 210);
+    text-decoration: none;
+    -webkit-transition: color .1s linear;
+    transition: color .1s linear;
+}
+.homeAssistantCard .forceOutputLookup {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
 chart .svg {
             border: 1px solid #CCCCCC;
         }
-        chart path {
+chart path {
             stroke: #1F77B4;
             stroke-width: 1px;
             fill: none;
         }
-
-        chart .axis {
+chart .axis {
             stroke: black;
         }
-
-        chart .axis .tick {
+chart .axis .tick {
             font-family: Arial, sans-serif;
             font-size: 12px;
         }
-
-        chart .dot {
+chart .dot {
             fill: #1F77B4;
         }
-
-        .sparkline {
+.sparkline {
             stroke: #1F77B4;
             stroke-width: 1px;
             fill: none;
         }
-
-        .token {
+.token {
             display: inline-block;
             background: #EEE;
             border-radius: 6px;
             padding: 2px 4px;
         }
-
-        strong {
-            font-family: Arial, sans-serif;
-            font-size: .75rem;
-        }
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.browser text {
-  text-anchor: end;
+strong {
+    font-family: Arial, sans-serif;
+    font-size: .75rem;
 }

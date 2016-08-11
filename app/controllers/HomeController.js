@@ -1,4 +1,4 @@
-tallySales.controller('HomeController',function($scope){
+tallySales.controller('HomeController',function($scope, Data){
   /*  $scope.data = [
             { "time": 1446824340000.0, "cpu": 0.486 },
             { "time": 1446824640000.0, "cpu": 0.483 },
@@ -10,6 +10,7 @@ tallySales.controller('HomeController',function($scope){
             { "time": 1446826440000.0, "cpu": 0.503 },
             { "time": 1446826740000.0, "cpu": 0.493 },
             { "time": 1446827040000.0, "cpu": 0.486 } ];*/
+    $scope.assistantList = Data.assistantList();
     
         $scope.dashboarddata= [{
             month: "July",

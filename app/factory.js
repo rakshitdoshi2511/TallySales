@@ -124,6 +124,19 @@ tallySales.factory('Data',function(){
             }];
             return _list;
             
+        },
+        assistantList: function(){
+            var _assistantList=[{
+                noofDays:20,
+                opportunityName:'Opportunity1'
+            },{
+                noofDays:30,
+                opportunityName:'ABC Holdings'
+            },{
+                noofDays:21,
+                opportunityName:'Test Company'
+            }];
+            return _assistantList;
         }
     };
 })
