@@ -1,0 +1,144 @@
+<div>
+    <div class="wrapper">
+        <div class="icon"><img src="assets/img/icons/opportunity_120.png" class="icon"></div>
+        <div class="head"><h3 class="head">OPPORTUNITY</h3></div>
+        <div class="title"><h3 class="title">{{opportunityName}}</h3></div>
+    </div>
+    <div id="highlights" class="row">
+        <div class="block">
+            <div class="highlights">
+                <div class="label"><label>Account Name</label></div>
+                <div class="text-main"><label>{{accountName}}</label></div>
+            </div>
+        </div>    
+        <div class="block-centre">
+            <div class="highlights">
+                <div class="label"><label>Close Date</label></div>
+                <div class="text"><label>{{closeDate}}</label></div>
+            </div>
+        </div>
+        <div class="block-centre">
+            <div class="highlights">
+                <div class="label"><label>Amount</label></div>
+                <div class="text"><label>{{amount}}</label></div>
+            </div>
+        </div>
+        <div class="block-centre">
+            <div class="highlights">
+                <div class="label"><label>Opportunity Owner</label></div>
+                <img src="assets/img/icons/profile.png" class="img-circle">
+                <div class="text-owner"><label>{{opportunityOwner}}</label></div>
+            </div>
+        </div>
+    </div>
+    <div class="clean-space"></div>
+    <div id="process" class="row">
+        <div class="block-process-start">
+            <img ng-src="{{qualificationImage}}" class="process-start"></img>
+        </div>
+        <div class="block-process">
+            <img ng-src="{{analysisImage}}" class="process-mid"></img>
+            <!--<input type="image" class="process-mid" src="assets/img/mid.png">-->
+        </div>
+        <div class="block-process">
+            <img ng-src="{{proposalImage}}" class="process-mid"></img>
+            <!--<input type="image" class="process-mid" src="assets/img/mid.png">-->
+        </div>
+        <div class="block-process">
+            <img ng-src="{{negotiationImage}}" class="process-mid"></img>
+            <!--<input type="image" class="process-mid" src="assets/img/mid.png">-->
+        </div>
+        <div class="block-process">
+            <img ng-src="{{closedImage}}" class="process-end"></img>
+            <!--<input type="image" class="process-end" src="assets/img/end.png">-->
+        </div>
+        <div class="block-process">
+            <input type="image" class="process-button" src="assets/img/button-process.png" ng-click="completeStage()">
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="tab-wrapper">
+    <div id="tabs" class="border">
+        <section id="content">
+            <ul class="headertab" ng-init="headertab =1">
+                <li ng-class="{activeheader:headertab===1}">
+                    <a href ng-click="headertab = 1">ACTIVITY</a>
+                </li>
+                <li ng-class="{activeheader:headertab===2}">
+                    <a href ng-click="headertab = 2">COLLABORATE</a>
+                </li>
+                <li ng-class="{activeheader:headertab===3}">
+                    <a href ng-click="headertab = 3">DETAILS</a>
+                </li>
+                <!--<li ng-class="{activeheader:tab===4}">
+                    <a href ng-click="tab = 4">Tab Four</a>
+                </li>-->
+                <br><br>
+                <div id="tab_activity" ng-show="headertab === 1">
+                    <ul class="tab" ng-init="tab =4">
+                        <li ng-class="{active:tab===4}">
+                            <a href ng-click="tab = 4">Log a call</a>
+                        </li>
+                        <li ng-class="{active:tab===5}">
+                            <a href ng-click="tab = 5">New Task</a>
+                        </li>
+                        <li ng-class="{active:tab===6}">
+                            <a href ng-click="tab = 6">New Event</a>
+                        </li>
+                        <li ng-class="{active:tab===7}">
+                            <a href ng-click="tab = 7">Email</a>
+                        </li>
+                        <br><br>
+                        <div id="activity_logcall" ng-show="tab === 4">
+                            <br>
+                            <br/>
+                            <label class="required activity_logcall_subject">Subject</label>
+                            <br>
+                            <input class="textbox_activity_logcall_subject" type="text" maxlength="255" ng-model="params.subject">
+                            <br>
+                            <br/>
+                            <label class="activity_logcall_subject">Comments</label>
+                            <br>
+                            <textarea class="activity_logcall_comments" maxlength="32000" ng-model="activity_logcall_comments"></textarea>
+                            <br>
+                            <br>
+                            <button class="activity_save" type="button" ng-click="logCall(params)">Save</button>
+                        </div>
+                        <div id="activity_task" ng-show="tab === 5"><h1>Task Selected</h1></div>
+                        <div id="activity_event" ng-show="tab === 6"><h1>Event Selected</h1></div>
+                        <div id="activity_email" ng-show="tab === 7"><h1>Email Selected</h1></div>
+                    </ul>     
+                </div>
+                <div id="tab_collborate" ng-show="headertab === 2">
+                    <h1>Collborate Selected</h1>
+                </div>
+                <div id="tab_details" ng-show="headertab === 3">
+                    <h1>Details Selected</h1>
+                </div>
+            </ul>
+            <!--<ul class="tab" ng-init="tab =1">
+                <li ng-class="{active:tab===1}">
+                    <a href ng-click="tab = 1">Tab One</a>
+                </li>
+                <li ng-class="{active:tab===2}">
+                    <a href ng-click="tab = 2">Tab Two</a>
+                </li>
+                <li ng-class="{active:tab===3}">
+                    <a href ng-click="tab = 3">Tab Three</a>
+                </li>
+                <li ng-class="{active:tab===4}">
+                    <a href ng-click="tab = 4">Tab Four</a>
+                </li>
+                <br><br>
+                <div id="tab1" ng-show="tab === 1"><h1>Tab1</h1></div>
+                <div id="tab2" ng-show="tab === 2"><h1>Tab2</h1></div>
+                <div id="tab3" ng-show="tab === 3"><h1>Tab3</h1></div>
+                <div id="tab4" ng-show="tab === 4"><h1>Tab4</h1></div>
+            </ul>-->
+        </section>
+    </div>
+    <div id="vertical_line" class="verticalLine"></div>    
+    <div id="account_insights" class="account_insights"><h1>Test</h1></div>    
+    </div>    
+</div>

@@ -1,0 +1,196 @@
+.homeHeroChart{
+    background-color: white;
+    border: 1px solid rgb(216, 221, 230);
+    border-radius: .25rem;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+}
+
+.homeHeroChartHeader.header {
+    border-bottom: 1px solid #e4dcdc;
+    padding: .75rem;
+}
+.homeHeroChartHeader .refresh {
+    display: inline;
+    float: right;
+    color: rgb(84, 105, 141);
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+h2.title {
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    display: inline;
+    font-family: sans-serif;
+    color: rgb(22, 50, 92);
+    font-weight: inherit;
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.homeHeroChartHeader .timestamp {
+    padding-right: .5rem;
+    font-size: .75rem;
+}
+.forceStyle .slds-button.forceIconDeprecated {
+    font-size: 1rem;
+    line-height: 1;
+}
+.slds-button--icon-container, .slds-button--icon-border, .slds-button--icon-border-filled {
+    width: 2rem;
+    height: 2rem;
+}
+.slds-button--icon-border-filled, .slds-button--icon-border {
+    border: 1px solid rgb(216, 221, 230);
+}
+.slds-button--icon, .slds-button--icon-container, .slds-button--icon-border, .slds-button--icon-border-filled, .slds-button--icon-more {
+    line-height: 1;
+    vertical-align: middle;
+    color: rgb(84, 105, 141);
+}
+.slds-button {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+    background-clip: border-box;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: .75rem;
+    line-height: 1.875rem;
+    text-decoration: none;
+    color: rgb(0, 112, 210);
+    -webkit-appearance: none;
+    white-space: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: color .05s linear,background-color .05s linear;
+    transition: color .05s linear,background-color .05s linear;
+}
+.uiButton {
+    display: inline-block;
+    cursor: pointer;
+}
+.homeHeroChartHeader .metricRow {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.metricRow{
+    list-style: none;
+     display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+li.metric {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding-right: 1.5rem;
+    min-width: 60px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+span.metricLabel{
+    font-size: .75rem;
+    color: rgb(84, 105, 141);
+    text-transform: uppercase;
+    padding-right: .5rem;
+    direction: ltr;
+    unicode-bidi: isolate;
+    color: rgb(22, 50, 92);
+    font-family: sans-serif;
+}
+span.metricAmount{
+    font-size: 1rem;
+    direction: ltr;
+    unicode-bidi: isolate;
+    color: rgb(22, 50, 92);
+    font-family: sans-serif;
+}
+chart .svg {
+            border: 1px solid #CCCCCC;
+        }
+        chart path {
+            stroke: #1F77B4;
+            stroke-width: 1px;
+            fill: none;
+        }
+
+        chart .axis {
+            stroke: black;
+        }
+
+        chart .axis .tick {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        chart .dot {
+            fill: #1F77B4;
+        }
+
+        .sparkline {
+            stroke: #1F77B4;
+            stroke-width: 1px;
+            fill: none;
+        }
+
+        .token {
+            display: inline-block;
+            background: #EEE;
+            border-radius: 6px;
+            padding: 2px 4px;
+        }
+
+        strong {
+            font-family: Arial, sans-serif;
+            font-size: .75rem;
+        }
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.browser text {
+  text-anchor: end;
+}

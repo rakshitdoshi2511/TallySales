@@ -1,0 +1,117 @@
+<div class="oneContent">
+    <div class="active oneContent">
+        <div class="objectHomeContainer forceListViewManager forceObjectHomeDesktop">
+            <div class="headerRegion">
+                <div class="topHeaderRegion">
+                    <div class="topLeftHeaderRegion">
+                        <div>
+                            <div class="listViewEntityLabelPlural">
+                                <span dir="ltr" class="uiOutputText">Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topRightHeaderRegion">
+                        <div class="topRightHeaderRegionContent">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomHeaderRegion">
+                    <div class="bottomLeftHeaderRegion">
+                        <span class="countSortedByFilteredBy uiOutputText forceListViewStatusInfo">6 items • </span>
+                        <span class="dateTimeWrapper forceListViewStatusInfo uiOutputText">Last updated&nbsp;
+                            <span class="uiOutputDateTime uiOutputText">08/10/2016</span>&nbsp;at&nbsp;
+                            <span class="uiOutputDateTime uiOutputText">10:22</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="centerRegion">
+                <div class="listViewContainer">
+                    <div class="forceListViewManagerPrimaryDisplayManager">
+                        <div class="displayArea">
+                            <div class="forceBaseListView forceObjectHomeListView">
+                                <div class="listViewContent">
+                                    <div class="uiScroller scroller-wrapper scroll-bidirectional native">
+                                        <div class="scroller actionBarPlugin fixedHeaderPlugin">
+                                            <table class="forceRecordLayout uiVirtualDataGrid--default uiVirtualDataGrid forceVirtualGrid resizable-cols" style="width: 1278px;">
+                                                <thead class="tableheader" style="transform: translate3d(0px, 0px, 0px);">
+                                                    <tr class="tablerow">
+                                                        <th class="tableh" style="width:236px" title="Opportunity Name">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText">Opportunity Name</span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th class="tableh" style="width:236px" title="Account Name">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText">Account Name</span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th class="tableh" style="width:236px" title="Stage">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText">Stage</span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th class="tableh" style="width:236px" title="Close Date">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText">Close Date</span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th class="tableh" style="width:236px" title="Opportunity Owner">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText">Opportunity Owner Alias</span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                        <th class="tableh" style="width:100px" title="Buttons">
+                                                            <div>
+                                                                <span class="header-wrapper">
+                                                                    <span class="content">
+                                                                        <span class="assistiveText"></span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot class="tablefoot"></tfoot>
+                                                <tbody ng-repeat="opportunity in opportunityList" ng-click="showDetails(opportunity)">
+                                                    <tr class="tableelementsrow">
+                                                        <td><span class="tableelement">{{opportunity.opportunityName}}</span></td>
+                                                        <td><span class="tableelement">{{opportunity.accountName}}</span></td>
+                                                        <td><span class="tableelement">{{opportunity.stage}}</span></td>
+                                                        <td><span class="tableelement">{{opportunity.closeDate}}</span></td>
+                                                        <td><span class="tableelement">{{opportunity.opportunityOwner}}</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

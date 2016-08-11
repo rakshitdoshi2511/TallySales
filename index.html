@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>TallySales- A Comprehensive CRM Sales Solution</title>
+</head>
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/chart.css">
+<link rel="stylesheet" href="assets/css/app.css">
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/js/chart.js"></script>   
+<script src="assets/js/d3.v3.min.js"></script>
+ 
+<script src="app/app.js"></script>
+<script src="app/factory.js"></script>    
+<!--<script src="app/router.js"></script>-->
+<script src="app/controllers/LoginController.js"></script> 
+<script src="app/controllers/DashboardController.js"></script>
+<script src="app/controllers/HomeController.js"></script>
+<script src="app/controllers/LeadsController"></script>
+<script src="app/controllers/OpportunitiesController.js"></script>
+<script src="app/controllers/OpportunitiesDetailController.js"></script>    
+<body ng-app="tallySales">
+    <div header></div>
+    <div id="container" class="parent">
+    <div class="master" ng-controller="DashboardController">
+        <ul class="masterlist" ng-repeat="item in masterList">
+            <li>
+            <img class="mastericon" src={{item.image}}>
+            <a href="#/dashboard/{{item.value}}">{{item.value}}
+            </a>
+            </li>
+        </ul>
+       <!-- <div ng-repeat="item in masterList">
+            <img class="mastericon" src={{item.image}}>
+            <a href="#/dashboard/{{item.value}}">{{item.value}}
+            </a>
+        </div>-->
+    </div>
+    <div class="detail">
+        <div ng-view class="content"></div>
+    </div>    
+    </div>
+    <div footer></div>
+</body>    
+    
+</html>
